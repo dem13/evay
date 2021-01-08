@@ -1,0 +1,14 @@
+
+.Day {
+
+}
+
+.DaySegment {
+    margin-top: 26px;
+}
+
+.SegmentDivider {
+    background: #E4BB97;
+    height: 4px;
+    margin-top: 26px;
+}

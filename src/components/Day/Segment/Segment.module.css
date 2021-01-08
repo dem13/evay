@@ -1,0 +1,16 @@
+
+.Segment {
+    background: #E4BB97;
+    width: 301px;
+    height: 200px;
+    border: 2px solid #584B53;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.SegmentHeader {
+    padding: 10px;
+    border-bottom: 2px solid #584B53;
+}
+.Segment-body {}
+.Segment-footer {}
