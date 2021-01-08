@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    background: #E4BB97;
+    height: 50px;
+    justify-content: center;
+}
+
+header > * {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header > *:last-child > * {
+    margin-left: auto;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header-button {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.header-button div {
+    width: 90%;
+    height: 3px;
+    background-color: #584B53;
+}
