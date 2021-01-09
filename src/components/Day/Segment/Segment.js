@@ -1,18 +1,42 @@
 import React from 'react';
 
 import classes from './Segment.module.css'
+import SegmentProgressBar from "./SegmentProgressBar/SegmentProgressBar";
+import {currentMinutes, formatMinutes} from "../../../utils/Utils";
 
-const Segment = (props) => {
+
+const Segment = ({segment, className}) => {
+  const currentTime = currentMinutes();
+
+  let progress = 0;
+
+  let progressTitle;
+
+  const active = segment.start <= currentTime;
+
+  if(active) {
+    const duration = segment.end - segment.start;
+
+    const timePassed = currentTime - segment.start;
+    const timeLeft = segment.end - currentTime;
+
+    progress = timePassed * 100 / duration;
+
+    progressTitle = formatMinutes(timeLeft);
+  } else{
+    progressTitle = "Starts in " + formatMinutes(segment.start - currentTime);
+  }
+
   return (
-    <div className={classes.Segment + " " + props.className}>
+    <div className={classes.Segment + " " + className}>
       <div className={classes.SegmentHeader}>
-        {props.title}
+        {segment.title}
       </div>
       <div className={classes.SegmentBody}>
         Soon...
       </div>
       <div className={classes.SegmentFooter}>
-
+        <SegmentProgressBar progress={progress} title={progressTitle}/>
       </div>
     </div>
   );

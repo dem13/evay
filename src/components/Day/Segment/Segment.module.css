@@ -5,12 +5,17 @@
     height: 200px;
     border: 2px solid #584B53;
     border-radius: 5px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .SegmentHeader {
     padding: 10px;
     border-bottom: 2px solid #584B53;
 }
-.Segment-body {}
-.Segment-footer {}
+.SegmentBody {
+    min-height: 103px;
+}
+.SegmentFooter {
+    padding: 10px;
+}
