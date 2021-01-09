@@ -1,0 +1,24 @@
+
+.ProgressBar {
+    background: #D6E3F8;
+    border: 2px solid #584B53;
+    border-radius: 5px;
+    height: 36px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ProgressBarTitle {
+    z-index: 1;
+    position: relative;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: center;
+}
+
+.ProgressBarProgress {
+    top: 0;
+    position: absolute;
+    background: #9D5C63;
+    height: 36px;
+}
