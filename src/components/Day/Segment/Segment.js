@@ -3,6 +3,7 @@ import React from 'react';
 import classes from './Segment.module.css'
 import SegmentProgressBar from "./SegmentProgressBar/SegmentProgressBar";
 import {currentMinutes, formatMinutes} from "../../../utils/Utils";
+import Button from "../../UI/Button/Button";
 
 
 const Segment = ({segment, className}) => {
@@ -42,7 +43,10 @@ const Segment = ({segment, className}) => {
         </div>
       </div>
       <div className={classes.SegmentFooter}>
-        <SegmentProgressBar progress={progress} title={progressTitle}/>
+        <div className={classes.SegmentProgressBarContainer}>
+          <SegmentProgressBar progress={progress} title={progressTitle}/>
+        </div>
+        {active ? <Button>Next</Button>: null}
       </div>
     </div>
   );

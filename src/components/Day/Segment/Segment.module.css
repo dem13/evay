@@ -21,10 +21,12 @@
 
 .SegmentFooter {
     padding: 10px;
+    display: flex;
 }
 
 .SegmentDescription {
     flex: 1;
+    padding-right: 10px;
 }
 
 .SegmentTimeContainer {
@@ -37,4 +39,9 @@
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
+}
+
+.SegmentProgressBarContainer {
+    flex: 1;
+    padding-right: 10px;
 }

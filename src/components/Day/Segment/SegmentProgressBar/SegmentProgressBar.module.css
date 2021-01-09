@@ -3,7 +3,7 @@
     background: #D6E3F8;
     border: 2px solid #584B53;
     border-radius: 5px;
-    height: 36px;
+    height: 43px;
     overflow: hidden;
     position: relative;
 }
@@ -12,13 +12,13 @@
     z-index: 1;
     position: relative;
     font-weight: bold;
-    line-height: 32px;
     text-align: center;
+    padding: 10px 0;
 }
 
 .ProgressBarProgress {
     top: 0;
     position: absolute;
     background: #9D5C63;
-    height: 36px;
+    height: 43px;
 }
