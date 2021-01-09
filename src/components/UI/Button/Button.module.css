@@ -1,0 +1,20 @@
+.Button {
+    display: inline;
+    background: #D6E3F8;
+    border: 2px solid #584B53;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    -webkit-user-select: none;
+    transition: background-color .25s, color .25s;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background: #584B53;
+    color: #D6E3F8;
+}
+
+.Button:focus {
+    outline: none;
+}
