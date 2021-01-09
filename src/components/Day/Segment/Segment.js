@@ -14,7 +14,7 @@ const Segment = ({segment, className}) => {
 
   const active = segment.start <= currentTime;
 
-  if(active) {
+  if (active) {
     const duration = segment.end - segment.start;
 
     const timePassed = currentTime - segment.start;
@@ -23,7 +23,7 @@ const Segment = ({segment, className}) => {
     progress = timePassed * 100 / duration;
 
     progressTitle = formatMinutes(timeLeft);
-  } else{
+  } else {
     progressTitle = "Starts in " + formatMinutes(segment.start - currentTime);
   }
 
@@ -33,7 +33,13 @@ const Segment = ({segment, className}) => {
         {segment.title}
       </div>
       <div className={classes.SegmentBody}>
-        Soon...
+        <div className={classes.SegmentDescription}>{segment.description}</div>
+        <div className={classes.SegmentTimeContainer}>
+          <div className={classes.SegmentTime}>
+            <div>{formatMinutes(segment.start)}</div>
+            <div>{formatMinutes(segment.end)}</div>
+          </div>
+        </div>
       </div>
       <div className={classes.SegmentFooter}>
         <SegmentProgressBar progress={progress} title={progressTitle}/>

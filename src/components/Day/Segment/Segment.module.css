@@ -2,7 +2,7 @@
 .Segment {
     background: #E4BB97;
     width: 301px;
-    height: 200px;
+    min-height: 200px;
     border: 2px solid #584B53;
     border-radius: 5px;
     margin-left: auto;
@@ -15,7 +15,26 @@
 }
 .SegmentBody {
     min-height: 103px;
+    padding: 10px 10px 0;
+    display: flex;
 }
+
 .SegmentFooter {
     padding: 10px;
+}
+
+.SegmentDescription {
+    flex: 1;
+}
+
+.SegmentTimeContainer {
+
+}
+
+.SegmentTime {
+    background: #D6E3F8;
+    border: 2px solid #584B53;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
 }
