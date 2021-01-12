@@ -1,0 +1,47 @@
+
+.DrawerToggle {
+    position: relative;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.DrawerToggle > div {
+    width: 90%;
+    height: 3px;
+    background-color: #584B53;
+    transition: transform .45s, opacity .45s;
+    position: absolute;
+}
+
+.DrawerToggle.Closed > div:nth-child(2) {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.DrawerToggle > div:first-child {
+    opacity: 1;
+    transform: translateY(350%);
+}
+
+.DrawerToggle > div:last-child {
+    transform: translateY(-350%);
+}
+
+
+.DrawerToggle.Closed > div:first-child {
+    opacity: 1;
+    transform: rotate(45deg) translateY(0);
+}
+
+.DrawerToggle.Closed > div:last-child {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(0);
+}

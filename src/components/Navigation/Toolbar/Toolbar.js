@@ -2,8 +2,9 @@ import React from 'react';
 
 import logo from '../../../logo.png'
 import './Toolbar.css'
+import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 
-const Toolbar = () => {
+const Toolbar = (props) => {
   return (
     <header>
       <div className="header-left">
@@ -15,11 +16,7 @@ const Toolbar = () => {
         </div>
       </div>
       <div className="header-right">
-        <div className="header-button">
-            <div/>
-            <div/>
-            <div/>
-        </div>
+        <DrawerToggle opened={props.sideDrawerOpened} clicked={props.sideDrawerToggled}/>
       </div>
     </header>
   );
