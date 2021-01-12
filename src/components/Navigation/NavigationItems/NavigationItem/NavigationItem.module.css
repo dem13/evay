@@ -1,0 +1,21 @@
+
+.NavigationItem {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 4px solid #FEF5EF;
+}
+
+.NavigationItem:first-child {
+    border-top: 4px solid #FEF5EF;
+}
+
+.NavigationItem a {
+    text-decoration: none;
+    color: #584B53;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a.active {
+    color: #9D5C63;
+}

@@ -11,6 +11,7 @@
     padding: 10px 0;
     box-sizing: border-box;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .DrawerToggle > div {
@@ -22,8 +23,7 @@
 }
 
 .DrawerToggle.Closed > div:nth-child(2) {
-    opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(110%);
 }
 
 .DrawerToggle > div:first-child {
