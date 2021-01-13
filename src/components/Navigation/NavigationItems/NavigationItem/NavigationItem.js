@@ -1,13 +1,22 @@
 import React from 'react';
 
 import classes from './NavigationItem.module.css';
+import {Link, useRouteMatch} from "react-router-dom";
 
-const NavigationItem = ( props ) => (
+const NavigationItem = ( props ) => {
+  let match = useRouteMatch({
+    path: props.link,
+    exact: true,
+  });
+
+  return (
     <li className={classes.NavigationItem}>
-        <a 
-            href={props.link} 
-            className={props.active ? classes.active : null}>{props.children}</a>
+      <Link
+        to={props.link}
+        onClick={props.clicked}
+        className={match ? classes.active : null}>{props.children}</Link>
     </li>
-);
+  )
+};
 
 export default NavigationItem;

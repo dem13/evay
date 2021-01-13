@@ -13,7 +13,7 @@ const SideDrawer = (props) => {
 
   return (
     <div className={attachesClasses.join(' ')}>
-      <NavigationItems/>
+      <NavigationItems itemClicked={props.itemClicked} />
     </div>
   );
 };
