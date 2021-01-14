@@ -1,9 +1,15 @@
 import React from 'react';
+import SignInForm from "../components/Auth/SignInForm/SignInForm";
 
 const SignIn = () => {
+  const submitHandler = e => {
+    e.preventDefault();
+    alert("Signing in...");
+  }
+
   return (
     <div>
-      <h1>Sign in</h1>
+      <SignInForm onSubmit={submitHandler}/>
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.FormInput {
+
+}
+
+.FormInput label {
+    display: block;
+    font-size: 20px;
+    color: #584B53;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
