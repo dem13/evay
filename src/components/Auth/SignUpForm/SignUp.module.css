@@ -1,0 +1,15 @@
+form {
+    text-align: center;
+    color: #584B53;
+}
+
+.body {
+    border-top: 4px solid #E4BB97;
+    border-bottom: 4px solid #E4BB97;
+    padding: 0 37px 10px;
+}
+
+.submit {
+    margin-top: 10px;
+    text-align: right;
+}
